@@ -1,7 +1,7 @@
 
 /* ________DEFINITIONS________ */
 @titleColor : #63a699;
-@navColor: #f8f8f8;;
+@navBgColor: #f8f8f8;;
 
 /* ________DEFAULTS________ */
 
@@ -18,6 +18,9 @@ h3 {
 	color: darken(@titleColor, 10%) !important;
 }
 
+*::selection {
+	background-color: lighten(@titleColor, 40%);
+}
 
 /* ________STRUCTURE________ */
 .container {
@@ -42,6 +45,27 @@ nav.navbar .navbar-header {
 	padding-left: 1em;
 }
 
+/* ________BAND________ */
+.band {
+	position: relative;
+	min-height: 400px;
+	background-attachment: fixed;
+	-webkit-background-attachment: fixed;
+	background-color: black;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0 10px rgba(0,0,0,.25) inset;
+	text-align: center;
+	margin: 0 0 -10px;
+}
+
+.band-heading {
+	color: lighten(@titleColor, 50%);
+	font: 300 100%/1.5 "Open Sans",sans-serif;
+	font-size: 30pt;
+	padding-top: 15%;
+}
+
 
 
 
@@ -55,11 +79,11 @@ nav.navbar .navbar-header {
 @media (min-width: 768px) {
 
 	nav.navbar .active {
-		background-color: darken(@navColor, 8%);
+		background-color: darken(@navBgColor, 8%);
 	}
 
 	nav.navbar .navbar-brand:hover, nav.navbar ul.navbar-nav li:hover {
-		background-color: darken(@navColor, 4%);
+		background-color: darken(@navBgColor, 4%);
 	}
 	
 }
