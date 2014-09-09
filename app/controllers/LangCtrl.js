@@ -4,9 +4,9 @@ module.controller('LangCtrl', ['$scope', '$translate', function ($scope, $transl
 	
 	$scope.changeLang = function (key) {
 		$translate.use(key).then(function (key) {
-			console.log("Lang = " + key);
+			//console.log("Lang = " + key);
 		}, function (key) {
-			console.log("Could not change language to " + key);
+			//console.log("Could not change language to " + key);
 		});
 	};
 

@@ -12,7 +12,7 @@ h3 {
 }
 /* ________STRUCTURE________ */
 .container {
-  padding-bottom: 5em;
+  margin-bottom: 5em;
 }
 footer {
   position: relative;
@@ -26,7 +26,24 @@ footer {
   right: 0;
   bottom: 0;
 }
-/* ________MEDIAQUERIES________ */
+/* ________NAVBAR________ */
+nav.navbar .navbar-header {
+  padding-left: 1em;
+}
+/** ________RESPONSIVE_DESIGN________ **/
+/* Large desktop */
+@media (min-width: 768px) {
+  nav.navbar .active {
+    background-color: #e4e4e4;
+  }
+  nav.navbar .navbar-brand:hover,
+  nav.navbar ul.navbar-nav li:hover {
+    background-color: #eeeeee;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 @media (max-width: 480px) {
   footer {
     float: none;

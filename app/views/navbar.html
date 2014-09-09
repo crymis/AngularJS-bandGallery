@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" data-ng-controller="NavCtrl">
   <div class="container-fluid">
 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <!-- BRANDNAME -->
-      <a class="navbar-brand" href="#">{{ 'NAV_BRAND' | translate}}</a>
+      <a data-ng-class="isActive('/')" class="navbar-brand" href="#">{{ 'NAV_BRAND' | translate}}</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -18,7 +18,7 @@
       <!-- Navigation on the left side -->
       <ul class="nav navbar-nav">
         <li>
-          <a href="#about">{{ 'NAV_ABOUT' | translate }}</a>
+          <a data-ng-class="isActive('/about')" href="#about">{{ 'NAV_ABOUT' | translate }}</a>
         </li>
       </ul>
 

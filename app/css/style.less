@@ -1,7 +1,7 @@
 
 /* ________DEFINITIONS________ */
 @titleColor : #63a699;
-
+@navColor: #f8f8f8;;
 
 /* ________DEFAULTS________ */
 
@@ -21,7 +21,7 @@ h3 {
 
 /* ________STRUCTURE________ */
 .container {
-	padding-bottom: 5em;
+	margin-bottom: 5em;
 }
 
 footer {
@@ -37,12 +37,44 @@ footer {
 	bottom: 0;
 }
 
+/* ________NAVBAR________ */
+nav.navbar .navbar-header {
+	padding-left: 1em;
+}
 
 
-/* ________MEDIAQUERIES________ */
 
-@media(max-width: 480px){
+
+
+
+/** ________RESPONSIVE_DESIGN________ **/
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+@media (min-width: 768px) {
+
+	nav.navbar .active {
+		background-color: darken(@navColor, 8%);
+	}
+
+	nav.navbar .navbar-brand:hover, nav.navbar ul.navbar-nav li:hover {
+		background-color: darken(@navColor, 4%);
+	}
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
 	footer {
 		float: none;
 	}
+
 }
