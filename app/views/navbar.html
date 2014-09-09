@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- BRANDNAME -->
+      <a class="navbar-brand" href="#">{{ 'NAV_BRAND' | translate}}</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+      <!-- Navigation on the left side -->
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#about">{{ 'NAV_ABOUT' | translate }}</a>
+        </li>
+      </ul>
+
+      <!-- Navigation on the right side -->
+      <ul class="nav navbar-nav navbar-right">
+        <li id="language" class="dropdown" data-ng-controller="LangCtrl">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ 'LANG_URL' | translate }}"> {{ 'LANG' | translate }} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="" data-ng-click="changeLang('de_DE')">{{ 'LANG_GER' | translate }}</a></li>
+            <li><a href="" data-ng-click="changeLang('en_US')">{{ 'LANG_ENG' | translate }}</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </nav>

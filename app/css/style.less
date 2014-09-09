@@ -1,0 +1,48 @@
+
+/* ________DEFINITIONS________ */
+@titleColor : #63a699;
+
+
+/* ________DEFAULTS________ */
+
+h1 {
+	color: lighten(@titleColor, 10%) !important;
+	margin: 1ex 0 2ex !important;
+}
+
+h2 {
+	color: @titleColor !important;
+}
+
+h3 {
+	color: darken(@titleColor, 10%) !important;
+}
+
+
+/* ________STRUCTURE________ */
+.container {
+	padding-bottom: 5em;
+}
+
+footer {
+	position: relative;
+	height: 5em; /* footer height */
+	margin: 0 4em 2em;
+}
+
+.copyright {
+	margin: 1em;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+
+/* ________MEDIAQUERIES________ */
+
+@media(max-width: 480px){
+	footer {
+		float: none;
+	}
+}

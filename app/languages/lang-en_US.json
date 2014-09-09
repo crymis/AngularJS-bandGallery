@@ -1,0 +1,12 @@
+{
+	"LANG" : "Language",
+	"LANG_GER" : "German",
+	"LANG_ENG" : "English",
+	"LANG_URL" : "/img/language/lang_en.png",
+	"NAV_BRAND" : "PortingGuide",
+	"NAV_ABOUT" : "About",
+	"HOME_TITLE" : "Badaaaboooom!",
+	"HOME_TITLETEXT" : "This website is a dynmic guideline, that provides helpful information to create a mobile and responsive website.",
+	"ABOUT_TITLE" : "About the Guideline",
+	"ABOUT_ABOUTTEXT" : "This Development Page and the belonging content consists of the materials researched in the thesis <br /> <i>Usability Guideline for Porting into Mobile Environment</i><br /> Semester 2014/2015 <br /> Daniel Eckelt, Mat-Nr.: 36443"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "PortingGuideline",
+  "description" : "Usability Guideline in form of a dynamic website to show all the examples for porting (Bachelor Thesis)",
+  "repository" : "local",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-less": "~0.11.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
