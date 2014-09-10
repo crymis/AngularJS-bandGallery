@@ -1,14 +1,19 @@
 /* ________DEFINITIONS________ */
 /* ________DEFAULTS________ */
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
 h1 {
-  color: #83b9ae !important;
-  margin: 1ex 0 2ex !important;
+  color: #83b9ae;
+  margin: 1ex 0 2ex;
 }
 h2 {
-  color: #63a699 !important;
+  color: #63a699;
 }
 h3 {
-  color: #4e887d !important;
+  color: #4e887d;
 }
 *::selection {
   background-color: #e5f0ee;
@@ -32,25 +37,6 @@ footer {
 /* ________NAVBAR________ */
 nav.navbar .navbar-header {
   padding-left: 1em;
-}
-/* ________BAND________ */
-.band {
-  position: relative;
-  min-height: 400px;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  background-color: black;
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) inset;
-  text-align: center;
-  margin: 0 0 -10px;
-}
-.band-heading {
-  color: #ffffff;
-  font: 300 100%/1.5 "Open Sans", sans-serif;
-  font-size: 30pt;
-  padding-top: 15%;
 }
 /** ________RESPONSIVE_DESIGN________ **/
 /* Large desktop */

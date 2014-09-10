@@ -5,17 +5,22 @@
 
 /* ________DEFAULTS________ */
 
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
 h1 {
-	color: lighten(@titleColor, 10%) !important;
-	margin: 1ex 0 2ex !important;
+	color: lighten(@titleColor, 10%);
+	margin: 1ex 0 2ex;
 }
 
 h2 {
-	color: @titleColor !important;
+	color: @titleColor;
 }
 
 h3 {
-	color: darken(@titleColor, 10%) !important;
+	color: darken(@titleColor, 10%);
 }
 
 *::selection {
@@ -44,28 +49,6 @@ footer {
 nav.navbar .navbar-header {
 	padding-left: 1em;
 }
-
-/* ________BAND________ */
-.band {
-	position: relative;
-	min-height: 400px;
-	background-attachment: fixed;
-	-webkit-background-attachment: fixed;
-	background-color: black;
-	background-position: center center;
-	background-size: cover;
-	box-shadow: 0 0 10px rgba(0,0,0,.25) inset;
-	text-align: center;
-	margin: 0 0 -10px;
-}
-
-.band-heading {
-	color: lighten(@titleColor, 50%);
-	font: 300 100%/1.5 "Open Sans",sans-serif;
-	font-size: 30pt;
-	padding-top: 15%;
-}
-
 
 
 

@@ -1,0 +1,23 @@
+/* bandGallery Styles */
+
+
+/* ________BAND________ */
+.band {
+	position: relative;
+	background-attachment: fixed;
+	-webkit-background-attachment: fixed;
+	background-color: black;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0 10px rgba(0,0,0,.25) inset;
+	text-align: center;
+}
+
+h1.band-heading {
+	color: #f7f9e0;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+	font: 300 100%/1.5 "Open Sans", "Helvetica",sans-serif;
+	font-size: 30pt;
+	margin: 0;
+	padding: 5em 0 5em;
+}

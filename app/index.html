@@ -2,17 +2,16 @@
 <html data-ng-app="portingGuide">
 <head>
 	<title>PortingGuideline</title>
-	<meta name="viewport" content="width=device-width" user-scalable="no">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width" user-scalable="no">	
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bandGallery.css">
 </head>
 <body>
 
 	<header data-ng-include="'views/navbar.html'"></header>
 
 	<div class="container" data-ng-view></div>
-	<!-- Galleryslider -->
-	<div data-ng-include="'/views/sliderGallery.html'"></div>
 
 	<footer data-ng-include="'views/footer.html'"></footer>
 
@@ -29,6 +28,11 @@
 
 	<script src="controllers/LangCtrl.js"></script>
 	<script src="controllers/NavCtrl.js"></script>
+	<script src="controllers/HomeCtrl.js"></script>
+
+	<script src="directives/bandGallery.js"></script>
+
+	<script src="services/ImageService.js"></script>
 
 </body>
 </html>
