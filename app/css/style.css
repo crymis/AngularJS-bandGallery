@@ -40,10 +40,6 @@ nav.navbar .navbar-header {
 }
 /* ________MAINCONTENT________ */
 /* escape the body-container to fullscreen the gallery */
-.band {
-  margin-left: -71px;
-  margin-right: -71px;
-}
 /** ________RESPONSIVE_DESIGN________ **/
 /* Large desktop */
 @media (min-width: 768px) {
@@ -59,6 +55,11 @@ nav.navbar .navbar-header {
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    word-wrap: break-word;
+  }
   footer {
     float: none;
   }

@@ -8,8 +8,7 @@ module.directive("bandGallery", ["$window", function($window){
 			scope.bandGalleryImgs = scope[attrs['galleryImgs']];
 			var btnsActive = attrs['navBtns'];
 
-			console.log(attrs['navBtns']);
-
+			// settings for btns-active attribute on directive
 			if(!(btnsActive === undefined) && (!btnsActive || btnsActive === '' || btnsActive === 'false' || btnsActive === '0')) {
 				scope.btnsActive = false;
 			} else {
@@ -46,13 +45,15 @@ module.directive("bandGallery", ["$window", function($window){
 					adjustHeights();
 					scope.$apply();
 				}
+	
 			});
 
 		},
 		template: "<div data-ng-repeat='band in bandGalleryImgs' class='band band-{{$index}}' style='background-image: url({{band.url}}); height:{{windowHeight}}px'>" +
+		"<button class='nextBtn' data-ng-click='nextImg($index)' data-ng-show='btnsActive && !$last'> &gt; </button>" +
+		"<button class='goTopBtn' data-ng-click='goTop()' data-ng-show='btnsActive && $last'> &gt;&gt; </button>" +
 		"<h1 class='band-heading'>{{band.title}}</h1>" +
-		"<button class='nextBtn' data-ng-click='nextImg($index)' data-ng-show='btnsActive && !$last'> &gt;&gt; </button>" +
-		"<button class='goTopBtn' data-ng-click='goTop()' data-ng-show='btnsActive && $last'> &gt;&gt;&gt; </button>" +
+		"<p class='band-description'>{{band.description}}</p>" +
 		"</div>"
 	};
 }]);

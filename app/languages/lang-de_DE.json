@@ -5,7 +5,7 @@
 	"LANG_URL" : "/img/language/lang_de.png",
 	"NAV_BRAND" : "PortingGuide",
 	"NAV_ABOUT" : "Über",
-	"HOME_TITLE" : "Leitfaden für Gebrauchstauglichkeit",
+	"HOME_TITLE" : "Leitfaden für Gebrauchstauglich<wbr></wbr>keit",
 	"HOME_TITLETEXT" : "Der PortingGuide befasst sich im Bereich der Usability mit der Umwandlung einer für Desktop-Rechner ausgelegten Webseite zu einer mobilen Version.<br />Dabei gibt es einige Komponenten, die unter Betracht gezogen werden müssen. So z.B. <b>Elemente, Animationen, Performance</b> sowie allgemeine Regeln der Software Ergonomie.",
 	"ABOUT_TITLE" : "Über den Guideline",
 	"ABOUT_ABOUTTEXT" : "Die Entwicklung dieser Webseite basiert auf der Ausarbeitung der Bachelor Thesis <br /> <i>Usability Guideline für die Portierung von Webseiten in das mobile Umfeld</i><br /> Wintersemester 2014/2015 <br /> Daniel Eckelt, Mat-Nr.: 36443"

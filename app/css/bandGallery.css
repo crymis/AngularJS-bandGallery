@@ -28,10 +28,18 @@
 		padding-top: 5em;
 	}
 
+	p.band-description {
+		color: #e6e8e8;
+		text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+		font: "Open Sans", "Helvetica",sans-serif;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
 	.nextBtn {
 		position: absolute;
-		bottom: 4ex;
-		right: 2ex;
+		bottom: 14px;
+		right: 8px;
 		-moz-transform: rotate(90deg);
 		-ms-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -76,7 +84,7 @@
 
 	.goTopBtn {
 		position: absolute;
-		bottom: -24px;
+		bottom: -20px;
 		right: 0;
 		-moz-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
@@ -123,7 +131,7 @@
 
 	.goTopBtn:hover {
 		bottom: 5px;
-		color: rgba(71, 70, 70, 0.8);
+		color: rgba(133, 133, 133, 0.8);
 	}
 
 	.nextBtn:hover, .goTopBtn:hover {
@@ -136,4 +144,11 @@
 
 	.nextBtn:focus, .goTopBtn:focus {
 		outline: none;
+	}
+
+	@media (max-width: 640px) {
+		h1.band-heading, p.band-description {
+			padding-top: 2em;
+			margin: 0;
+		}
 	}
