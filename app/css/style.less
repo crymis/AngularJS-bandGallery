@@ -52,9 +52,10 @@ nav.navbar .navbar-header {
 
 /* ________MAINCONTENT________ */
 
-/* escape the body-container to fullscreen the gallery */
+/* escape the body-container to fullscreen (on 24" fullHD) the gallery */
 .band {
-
+/*	margin-left: -34%;
+	margin-right: -34%;*/
 }
 
 
@@ -71,8 +72,14 @@ nav.navbar .navbar-header {
 		background-color: darken(@navBgColor, 8%);
 	}
 
-	nav.navbar .navbar-brand:hover, nav.navbar ul.navbar-nav li:hover {
+	nav.navbar .navbar-brand:hover, nav.navbar ul.navbar-nav .navbar-tab:hover {
 		background-color: darken(@navBgColor, 4%);
+		transition: all 0.25s;
+	}
+
+	nav.navbar .active.navbar-brand:hover, nav.navbar ul.navbar-nav .active.navbar-tab:hover {
+		background-color: darken(@navBgColor, 16%);
+		transition: all 0.25s;
 	}
 	
 }

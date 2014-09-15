@@ -19,14 +19,14 @@ module.directive("bandGallery", ["$window", function($window){
 				if(index+1 < scope.bandGalleryImgs.length) {
 					angular.element('html,body').animate({
 						scrollTop: angular.element('.band-'+(index+1)).offset().top+1
-					});
+					}, 1000, "easeOutCubic");
 				}
 			};
 
 			scope.goTop = function() {
 				angular.element('html,body').animate({
 					scrollTop: angular.element('.band-0').offset().top
-				});
+				}, 1500, "easeOutCirc");
 			}
 
 			function adjustHeights() {

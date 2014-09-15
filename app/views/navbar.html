@@ -18,14 +18,14 @@
       <!-- Navigation on the left side -->
       <ul class="nav navbar-nav">
         <li>
-          <a data-ng-class="isActive('/about')" href="#about">{{ 'NAV_ABOUT' | translate }}</a>
+          <a data-ng-class="isActive('/about')" class="navbar-tab" href="#about">{{ 'NAV_ABOUT' | translate }}</a>
         </li>
       </ul>
 
       <!-- Navigation on the right side -->
       <ul class="nav navbar-nav navbar-right">
         <li id="language" class="dropdown" data-ng-controller="LangCtrl">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ 'LANG_URL' | translate }}"> {{ 'LANG' | translate }} <span class="caret"></span></a>
+          <a href="" class="dropdown-toggle navbar-tab" data-toggle="dropdown"><img src="{{ 'LANG_URL' | translate }}"> {{ 'LANG' | translate }} <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="" data-ng-click="changeLang('de_DE')">{{ 'LANG_GER' | translate }}</a></li>
             <li><a href="" data-ng-click="changeLang('en_US')">{{ 'LANG_ENG' | translate }}</a></li>

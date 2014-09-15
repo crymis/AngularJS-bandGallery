@@ -39,7 +39,11 @@ nav.navbar .navbar-header {
   padding-left: 1em;
 }
 /* ________MAINCONTENT________ */
-/* escape the body-container to fullscreen the gallery */
+/* escape the body-container to fullscreen (on 24" fullHD) the gallery */
+.band {
+  /*	margin-left: -34%;
+	margin-right: -34%;*/
+}
 /** ________RESPONSIVE_DESIGN________ **/
 /* Large desktop */
 @media (min-width: 768px) {
@@ -47,8 +51,14 @@ nav.navbar .navbar-header {
     background-color: #e4e4e4;
   }
   nav.navbar .navbar-brand:hover,
-  nav.navbar ul.navbar-nav li:hover {
+  nav.navbar ul.navbar-nav .navbar-tab:hover {
     background-color: #eeeeee;
+    transition: all 0.25s;
+  }
+  nav.navbar .active.navbar-brand:hover,
+  nav.navbar ul.navbar-nav .active.navbar-tab:hover {
+    background-color: #cfcfcf;
+    transition: all 0.25s;
   }
 }
 /* Portrait tablet to landscape and desktop */
