@@ -18,7 +18,7 @@ Angular Template for setting up Angular Webprojects.
 ### How do I get set up? ###
 
 * Clone repository
-* install nodejs (via npm install)
-* install grunt (first globally, then local for the project)
-* run website with grunt (via grunt serve)
-* start developing ;)
+* May install nodejs (via npm install)
+* Install grunt (first globally, then local for the project with npm install grunt)
+* Run website with grunt (via grunt serve)
+* Start developing ;)
