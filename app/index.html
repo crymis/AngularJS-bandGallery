@@ -11,7 +11,7 @@
 
 	<header data-ng-include="'views/navbar.html'"></header>
 
-	<div class="container" data-ng-view></div>
+	<div data-ng-class="{'container': !isBandGallery()}" data-ng-view></div>
 
 	<footer data-ng-include="'views/footer.html'"></footer>
 
@@ -30,6 +30,7 @@
 	<script src="controllers/LangCtrl.js"></script>
 	<script src="controllers/NavCtrl.js"></script>
 	<script src="controllers/HomeCtrl.js"></script>
+	<script src="controllers/ElementCtrl.js"></script>
 
 	<script src="directives/bandGallery.js"></script>
 

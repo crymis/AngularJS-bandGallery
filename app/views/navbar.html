@@ -18,8 +18,15 @@
       <!-- Navigation on the left side -->
       <ul class="nav navbar-nav">
         <li>
+          <a data-ng-class="isActive('/bandGallery')" class="navbar-tab" href="#bandGallery">{{ 'NAV_BAND_GALLERY' | translate }}</a>
+        </li>
+        <li>
+          <a data-ng-class="isActive('/flex')" class="navbar-tab" href="#flex">{{ 'NAV_FLEX' | translate }}</a>
+        </li>
+        <li>
           <a data-ng-class="isActive('/about')" class="navbar-tab" href="#about">{{ 'NAV_ABOUT' | translate }}</a>
         </li>
+        
       </ul>
 
       <!-- Navigation on the right side -->

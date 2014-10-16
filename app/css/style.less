@@ -5,6 +5,10 @@
 
 /* ________DEFAULTS________ */
 
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	height: 100%;
 	min-height: 100%;
@@ -59,6 +63,45 @@ nav.navbar .navbar-header {
 }
 
 
+/* FlexExample */
+.flexContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 10px;
+	overflow: hidden;
+	background-color: rgb(138, 185, 173);
+}
+
+.flexSidemenu_left {
+	flex: 1 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: #94e290;
+}
+
+.flexMain {
+	flex: 5 1px;
+	margin-left: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: #e24f56;
+}
+
+.flexHeader {
+	flex: 1 100%;
+	text-align: center;
+	height: 20px;
+	background-color: #e2d058;
+}
+
+.flexFooter {
+	flex: 1 100%;
+	text-align: center;
+	height: 20px;
+	background-color: #95c3e2;
+}
+
 
 
 /** ________RESPONSIVE_DESIGN________ **/
@@ -88,7 +131,28 @@ nav.navbar .navbar-header {
 @media (min-width: 768px) and (max-width: 979px) {}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+	.flexHeader {
+		order: 1;
+	}
+
+	.flexSidemenu_left {
+		order: 3;
+		flex: 0 100%;
+	}
+
+	.flexMain {
+		margin-left: 0;
+		margin-bottom: 20px;
+		order: 2;
+		flex: 1 100%;
+	}
+
+	.flexFooter {
+		order: 4;
+	}
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 

@@ -5,8 +5,14 @@
 	"LANG_URL" : "/img/language/lang_en.png",
 	"NAV_BRAND" : "PortingGuide",
 	"NAV_ABOUT" : "About",
+	"NAV_BAND_GALLERY" : "BandGallery",
+	"NAV_FLEX" : "FlexExample",
 	"HOME_TITLE" : "Usability Guideline",
 	"HOME_TITLETEXT" : "This website is a dynmic guideline, that provides helpful information to create a mobile and responsive website.",
 	"ABOUT_TITLE" : "About the Guideline",
-	"ABOUT_ABOUTTEXT" : "This Development Page and the belonging content consists of the materials researched in the thesis <br /> <i>Usability Guideline for Porting into Mobile Environment</i><br /> Semester 2014/2015 <br /> Daniel Eckelt, Mat-Nr.: 36443"
+	"ABOUT_ABOUTTEXT" : "This Development Page and the belonging content consists of the materials researched in the thesis <br /> <i>Usability Guideline for Porting into Mobile Environment</i><br /> Semester 2014/2015 <br /> Daniel Eckelt, Mat-Nr.: 36443",
+	"FLEX_TITLE" : "FlexExample",
+	"FLEX_EXAMPLETEXT" : "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions. CSS is a language for describing the rendering of structured documents (such as HTML and XML) on screen, on paper, in speech, etc.",
+	"BAND_GALLERY_TITLE" : "BandGallery",
+	"BAND_GALLERY_TEXT" : "The Bandgallery is a own created gallery, that allows the adding of pictures, which get ordered in colums fullscreen. Added navigation buttons let you scroll automatically from picture to picture."
 }
