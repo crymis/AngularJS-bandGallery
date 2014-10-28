@@ -1,10 +1,29 @@
+/*------------------------------------*
+   CONTENTS
+*------------------------------------*/
+/*
+LESS DEFINITIONS
+TYPE
+STRUCTURE
+NAVBAR
+MAIN
+RESPONSIVE
+*/
 
-/* ________DEFINITIONS________ */
+
+
+
+/*------------------------------------*
+   $LESS DEFINITIONS
+*------------------------------------*/
 @titleColor : #63a699;
 @navBgColor: #f8f8f8;;
 
-/* ________DEFAULTS________ */
 
+
+/*------------------------------------*
+   $TYPE
+*------------------------------------*/
 * {
 	box-sizing: border-box;
 }
@@ -31,7 +50,17 @@ h3 {
 	background-color: lighten(@titleColor, 40%);
 }
 
-/* ________STRUCTURE________ */
+header {
+	z-index: 5;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+/*------------------------------------*
+   $STRUCTURE
+*------------------------------------*/
 .container {
 	margin-bottom: 5em;
 }
@@ -49,21 +78,28 @@ footer {
 	bottom: 0;
 }
 
-/* ________NAVBAR________ */
+
+
+/*------------------------------------*
+   $NAVBAR
+*------------------------------------*/
 nav.navbar .navbar-header {
 	padding-left: 1em;
 }
 
-/* ________MAINCONTENT________ */
 
+
+/*------------------------------------*
+   $MAIN
+*------------------------------------*/
 /* escape the body-container to fullscreen (on 24" fullHD) the gallery */
 .band {
 /*	margin-left: -34%;
-	margin-right: -34%;*/
+margin-right: -34%;*/
 }
 
 
-/* FlexExample */
+/* FLEX_EXAMPLE */
 .flexContainer {
 	display: flex;
 	flex-flow: row wrap;
@@ -102,9 +138,41 @@ nav.navbar .navbar-header {
 	background-color: #95c3e2;
 }
 
+/* SIDEMENU */
+.sidemenuWrapper {
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #cfebd9;
+}
+
+.sidemenu {
+	position: relative;
+	min-height: 100%;
+	padding: 15px;
+	padding-top: 50px;
+}
+
+.contentOfSidemenuPage {
+	margin-left: 250px;
+}
+
+.sidemenuBrand {
+	margin-top: -30px;
+}
 
 
-/** ________RESPONSIVE_DESIGN________ **/
+
+
+/*------------------------------------*
+	$RESPONSIVE DESIGN
+*------------------------------------*/
 
 /* Large desktop */
 @media (min-width: 1200px) {}
@@ -165,4 +233,43 @@ nav.navbar .navbar-header {
 		float: none;
 	}
 
+}
+
+.cssReso {
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: cover; /* scales the pic into the box */
+	margin-top: 20px;
+}
+
+/* Resolution tests */
+/* Standard screen resolution is 96pdi (or 1dppx) */
+@media only screen and (min-resolution: 96dpi) {
+	.cssReso:before {
+		color: #6fad6c;
+		font-size: 8pt;
+		content: "100x100px";
+	}
+	.cssReso {
+		background-image: url(/img/resolution/100x100_300dpi.png);
+	}
+}
+/* 1.3 dppx (dots per pixel units) equals to 1.3 * 96 = 142.5dpi */
+@media only screen and (min-resolution: 1.3dppx) {
+	.cssReso:before {
+		content: "200x200px";
+	}
+	.cssReso {
+		background-image: url(/img/resolution/200x200_300dpi.png);
+	}
+}
+/* device-pixel-ratio gives information about the pixel density (nexus5 has dpr:3) */
+@media (-webkit-min-device-pixel-ratio: 3) {
+	.cssReso:before {
+		content: "300x300px";
+	}
+	.cssReso {
+		background-image: url(/img/resolution/300x300_300dpi.png);
+	}
 }
