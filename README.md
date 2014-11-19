@@ -8,12 +8,12 @@ An AngularJS Directive that sets up a fullscreen gallery with all of your pictur
 ###Adding to your project
 To get the bandGallery to work, you just have to
 
-  - copy the bandGallery.js file into your directives directory
-  - add the bandGallery.js file to your index.html
-  - copy the bandGallery.css to your css directory
-  - add the jQuery easing plugin to your project (for smoother animations)
+  1. copy the bandGallery.js file into your directives directory
+  2. add the bandGallery.js file to your index.html
+  3. copy the bandGallery.css to your css directory
+  4. add the jQuery easing plugin to your project (for smoother animations)
     * http://jqueryui.com/easing/
-  - you are done
+  5. you are done
   
 ###Configuring the directive
 You can place the directive wherever you want.
