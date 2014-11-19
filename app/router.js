@@ -1,26 +1,9 @@
-var module = angular.module('portingGuide');
+var module = angular.module('bandGalleryDemo');
 module.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 	when("/", {
 		templateUrl: "/views/home.html",
 		controller: "HomeCtrl"
-	}).
-	when("/about", {
-		templateUrl: "views/about.html"
-	}).
-	when("/bandGallery", {
-		templateUrl: "views/bandGallery.html",
-		controller: "ElementCtrl"
-	}).
-	when("/flex", {
-		templateUrl: "views/flexExample.html"
-	}).
-	when("/reso", {
-		templateUrl: "views/cssReso.html"
-	}).
-	when("/sidemenu", {
-		templateUrl: "views/sidemenu.html",
-		controller: "ElementCtrl"
 	}).
 	otherwise({
 		redirectTo: "/"

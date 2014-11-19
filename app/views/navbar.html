@@ -3,48 +3,9 @@
 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <!-- BRANDNAME -->
-      <a data-ng-class="isActive('/')" class="navbar-brand" href="#">{{ 'NAV_BRAND' | translate}}</a>
+      <a data-ng-class="isActive('/')" class="navbar-brand" href="#">Demo</a>
     </div>
-
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-
-      <!-- Navigation on the left side -->
-      <ul class="nav navbar-nav">
-        <li>
-          <a data-ng-class="isActive('/bandGallery')" class="navbar-tab" href="#bandGallery">{{ 'NAV_BAND_GALLERY' | translate }}</a>
-        </li>
-        <li>
-          <a data-ng-class="isActive('/flex')" class="navbar-tab" href="#flex">{{ 'NAV_FLEX' | translate }}</a>
-        </li>
-        <li>
-          <a data-ng-class="isActive('/reso')" class="navbar-tab" href="#reso">{{ 'NAV_RESO' | translate }}</a>
-        </li>
-        <li>
-        <a data-ng-class="isActive('/sidemenu')" class="navbar-tab" href="#sidemenu">{{ 'NAV_SIDEMENU' | translate }}</a>
-        </li>
-        <li>
-          <a data-ng-class="isActive('/about')" class="navbar-tab" href="#about">{{ 'NAV_ABOUT' | translate }}</a>
-        </li>
-        
-      </ul>
-
-      <!-- Navigation on the right side -->
-      <ul class="nav navbar-nav navbar-right">
-        <li id="language" class="dropdown" data-ng-controller="LangCtrl">
-          <a href="" class="dropdown-toggle navbar-tab" data-toggle="dropdown"><img src="{{ 'LANG_URL' | translate }}"> {{ 'LANG' | translate }} <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="" data-ng-click="changeLang('de_DE')">{{ 'LANG_GER' | translate }}</a></li>
-            <li><a href="" data-ng-click="changeLang('en_US')">{{ 'LANG_ENG' | translate }}</a></li>
-          </ul>
-        </li>
-      </ul>
 
     </div>
   </nav>

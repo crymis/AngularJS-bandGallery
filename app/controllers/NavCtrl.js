@@ -1,4 +1,4 @@
-var module = angular.module("portingGuide");
+var module = angular.module("bandGalleryDemo");
 
 module.controller("NavCtrl", ['$scope', '$location', function($scope, $location) {
 

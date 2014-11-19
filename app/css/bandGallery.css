@@ -38,15 +38,9 @@ p.band-description {
 
 
 /* ________OVERLAY________ */
-.nextBtn {
+.overlayBtn {
 	position: absolute;
-	bottom: 14px;
-	right: 8px;
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg) scale(0.8);
+
 	-moz-box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
 	-webkit-box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
 	box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
@@ -56,7 +50,6 @@ p.band-description {
 	-webkit-border-top-left-radius:42px;
 	border-top-right-radius:42px;
 	border-top-left-radius:42px;
-
 
 	-webkit-border-bottom-left-radius:42px;
 	-webkit-border-bottom-right-radius:42px;
@@ -80,63 +73,45 @@ p.band-description {
 	text-decoration:none;
 	text-align:center;
 	text-shadow: 2px -1px 4px #1b1a1c;
-
 	transition: all 0.25s;
 }
 
+.overlayBtn.prevBtn {
+	top: 14px;
+	right: 8px;
+	-moz-transform: rotate(270deg) scale(0.8);
+	-ms-transform: rotate(270deg) scale(0.8);
+	-o-transform: rotate(270deg) scale(0.8);
+	-webkit-transform: rotate(270deg) scale(0.8);
+	transform: rotate(270deg) scale(0.8);
+} 
+
+.overlayBtn.nextBtn {
+	bottom: 14px;
+	right: 8px;
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg) scale(0.8);
+}
+
 .goTopBtn {
-	position: absolute;
 	bottom: -20px;
 	right: 0;
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	transform: rotate(-90deg) scale(0.8);
-	-moz-box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
-	-webkit-box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
-	box-shadow: 2px -1px 6px 0px rgba(20,20,20,0.5);
+	-moz-transform: rotate(270deg) scale(0.8);
+	-ms-transform: rotate(270deg) scale(0.8);
+	-o-transform: rotate(270deg) scale(0.8);
+	-webkit-transform: rotate(270deg) scale(0.8);
+	transform: rotate(270deg) scale(0.8);
 	background-color: rgba(71, 70, 70, 0.8);
-
-	-webkit-border-top-right-radius:42px;
-	-webkit-border-top-left-radius:42px;
-	border-top-right-radius:42px;
-	border-top-left-radius:42px;
-
-
-	-webkit-border-bottom-left-radius:42px;
-	-webkit-border-bottom-right-radius:42px;
-	border-bottom-right-radius:42px;
-	border-bottom-left-radius:42px;
-
-	-moz-border-radius-topright:42px;
-	-moz-border-radius-topleft:42px;
-	-moz-border-radius-bottomright:42px;
-	-moz-border-radius-bottomleft:42px;
-	text-indent:0px;
-	border:2px solid #dcdcdc;
-	display:inline-block;
-	color: #eff2e5;
-	font-family:Arial;
-	font-size:15px;
-	font-style:normal;
 	font-weight: bold;
 	height:74px;
 	line-height:40px;
 	width:94px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow: 2px -1px 4px #1b1a1c;
-
-	transition: all 0.25s;
 }
 
-.goTopBtn:hover {
-	bottom: 5px;
-	color: rgba(133, 133, 133, 0.8);
-}
-
-.nextBtn:hover, .goTopBtn:hover {
+.overlayBtn:hover {
 	-moz-box-shadow: 2px -1px 30px 0px rgba(20,20,20,0.6);
 	-webkit-box-shadow: 2px -1px 30px -5px rgba(20,20,20,0.6);
 	box-shadow: 2px -1px 30px 0px rgba(20,20,20,0.6);
@@ -144,8 +119,13 @@ p.band-description {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.nextBtn:focus, .goTopBtn:focus {
+.overlayBtn:focus {
 	outline: none;
+}
+
+.goTopBtn:hover {
+	bottom: 5px;
+	color: rgba(133, 133, 133, 0.8);
 }
 
 .pageNr {

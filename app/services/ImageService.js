@@ -1,7 +1,11 @@
-var module = angular.module("portingGuide");
+var module = angular.module("bandGalleryDemo");
 
 module.service("ImageService", [function(){
 	this.getBandGalleryImgs = function(){
-		return [{"url":"img/band/appIdea.jpg", "title":"Awesome ideas", "description":"Innovative ideas to create new elements with new experience"}, {"url":"/img/band/desktopMobile3.jpg", "title" : "Desktop to Mobile"}, {"url":"/img/band/infographic1.jpg", "title":"Mobile Development"},{"url":"/img/band/infographic2.jpg", "title":"Directly from scratch"}, {"url":"/img/band/responsive.jpg", "title":"Respnsive Design"}];
+		return [{"url":"img/sunfield.jpg", "title":"Completely responsive", "description":"Play around with the window sizes, the bandGallery will always fit on your view!"},
+		 		{"url":"/img/lake.jpg", "title":"Customizable controll elements", "description":"Don't like the page number on the left bottom? Just set the page-nr attribute to false"},
+		 		{"url":"/img/boat.jpg", "title":"Fresh floating", "description":"Smooth scrolling due to previous and next-buttons on the side"},
+		 		{"url":"/img/sea.jpg", "title" : "Presenting big pictures", "description":"Showing fullscreen images to present all your best!"},
+		 		{"url":"/img/tree.jpg"}];
 	}
 }]);

@@ -1,6 +1,6 @@
 {
-  "name": "PortingGuideline",
-  "description" : "Usability Guideline in form of a dynamic website to show all the examples for porting (Bachelor Thesis)",
+  "name": "bandGalleryDemo",
+  "description" : "AngularJS Directive, that really shows your images",
   "repository" : "local",
   "version": "0.0.1",
   "dependencies": {},

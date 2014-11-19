@@ -4,7 +4,7 @@ Created by Daniel Eckelt
 Date: 12.September 2014;
 **/
 
-var module = angular.module("portingGuide");
+var module = angular.module("bandGalleryDemo");
 
 module.directive("bandGallery", ["$window", function($window){
 	return {
@@ -19,6 +19,14 @@ module.directive("bandGallery", ["$window", function($window){
 			// checking for attributes: set true, if undefined
 			scope.btnsActive = scope.navBtns === undefined || !!scope.navBtns;
 			scope.pageNrActive = scope.pageNr === undefined || !!scope.pageNr;
+			
+			scope.prevImg = function(index) {
+				if(index-1 > -1) {
+					angular.element('html,body').animate({
+						scrollTop: angular.element('.band-'+(index-1)).offset().top+1
+					}, 1000, "easeInOutCubic");
+				}
+			};
 
 			scope.nextImg = function(index) {
 				if(index+1 < scope.bandGalleryImgs.length) {
@@ -56,8 +64,9 @@ module.directive("bandGallery", ["$window", function($window){
 		},
 		template: 
 		"<div data-ng-repeat='band in bandGalleryImgs' class='band band-{{$index}}' style='background-image: url({{band.url}}); height:{{windowHeight}}px'>" +
-			"<button class='nextBtn' data-ng-click='nextImg($index)' data-ng-show='btnsActive && !$last'> &gt; </button>" +
-			"<button class='goTopBtn' data-ng-click='goTop()' data-ng-show='btnsActive && $last'> &gt;&gt; </button>" +
+			"<button class='overlayBtn prevBtn' data-ng-click='prevImg($index)' data-ng-show='btnsActive && !$first'> &gt; </button>" +
+			"<button class='overlayBtn nextBtn' data-ng-click='nextImg($index)' data-ng-show='btnsActive && !$last'> &gt; </button>" +
+			"<button class='overlayBtn goTopBtn' data-ng-click='goTop()' data-ng-show='btnsActive && $last'> &gt;&gt; </button>" +
 			"<h1 class='band-heading'>{{band.title}}</h1>" +
 			"<p class='band-description'>{{band.description}}</p>" +
 			"<div class='pageNr' data-ng-show='pageNrActive'> {{$index+1}}/{{bandGalleryImgs.length}} </div>" +
