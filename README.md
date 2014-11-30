@@ -19,7 +19,7 @@ To get the bandGallery to work, you just have to
 You can place the directive wherever you want.
 Just add this html tag
 ```sh
-<band-gallery gallery-imgs='myImgs' nav-btns="true" page-nr="true"></band-gallery>
+<band-gallery gallery-imgs='myImgs' nav-top-btn="true" nav-down-btn="true" page-nr="true"></band-gallery>
 ```
 
 ####Attributes
@@ -27,7 +27,7 @@ Just add this html tag
   * key: "url", value: image url
   * optional[key: "title", value: image title which is in front of the image]
   * optional[key: "description", value: description of the image, which is placed under the title]
-- nav-btns: require a boolean value, "true" will show the overlay buttons (next, prev, goTop), "false" will hide them
+- nav-top/down-btn: require a boolean value, "true" will show the overlay button (next, prev), "false" will hide it (note: goTop is visible if one direction-btn is visible)
 - page-nr: require a boolean value, "true" will show the page number on the bottom, "false" will hide it
   * If you don't add this attributes, the default setting is "true": nav-buttons and page-number are shown
 
