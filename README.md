@@ -11,9 +11,14 @@ To get the bandGallery to work, you just have to
   1. copy the bandGallery.js file into your directives directory
   2. add the bandGallery.js file to your index.html
   3. copy the bandGallery.css to your css directory
-  4. add the jQuery easing plugin to your project (for smoother animations)
+  4. add the bandGallery.css to your index.html
+  5. add the module to your dependencies in app.js like
+     ```sh
+        angular.module("yourApp", ["crymis-bandGallery"]);
+     ```
+  6. add the jQuery easing plugin to your project (for smoother animations)
     * http://jqueryui.com/easing/
-  5. you are done
+  7. you are done
   
 ###Configuring the directive
 You can place the directive wherever you want.
@@ -44,4 +49,4 @@ Greets
 Crymis
 
 
-[here]: http://crymis.github.io/BandGallery
+[here]: http://crymis.github.io/AngularJS-bandGallery-demo/#/
