@@ -12,10 +12,10 @@ module.exports = function (grunt) {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
-        files: ["app/**/*", "!app/**/*.less"]
+        files: ["**/*", "!/**/*.less"]
       },
       less : {
-        files: ["app/**/*.less"],
+        files: ["**/*.less"],
         tasks: ["less"]
       }
     },
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     less: {
       development: {
         files: {
-          "app/css/style.css": "app/css/style.less"
+          "css/style.css": "css/style.less"
         }
       }
     },
@@ -32,8 +32,8 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change 'localhost' to '0.0.0.0' to access the server from outside.
-        hostname: '0.0.0.0',
-        livereload: 35729
+        hostname: '127.0.0.1',
+        livereload: 9001
       },
       livereload: {
         options: {
@@ -44,7 +44,6 @@ module.exports = function (grunt) {
                 '/bower_components',
                 connect.static('./bower_components')
               ),
-              connect.static("app")
             ];
           }
         }
