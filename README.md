@@ -13,8 +13,8 @@ To get the bandGallery to work, you just have to
   3. copy the bandGallery.css to your css directory
   4. add the bandGallery.css to your index.html
   5. add the module to your dependencies in app.js like
-     ```sh
-        angular.module("yourApp", ["crymis-bandGallery"]);
+    ```
+      angular.module("yourApp", ["crymis-bandGallery"]);
      ```
   6. add the jQuery easing plugin to your project (for smoother animations)
     * http://jqueryui.com/easing/
@@ -23,7 +23,7 @@ To get the bandGallery to work, you just have to
 ###Configuring the directive
 You can place the directive wherever you want.
 Just add this html tag
-```sh
+```
 <band-gallery gallery-imgs='myImgs' nav-top-btn="true" nav-down-btn="true" page-nr="true"></band-gallery>
 ```
 
