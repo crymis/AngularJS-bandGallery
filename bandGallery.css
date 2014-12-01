@@ -13,6 +13,7 @@ Date: 12.September 2014;
 	-moz-background-attachment: fixed;
 	background-color: black;
 	background-position: center center;
+	-webkit-background-size: cover;
 	background-size: cover;
 	box-shadow: 0 0 10px rgba(0,0,0,.25) inset;
 	text-align: center;
@@ -89,10 +90,10 @@ p.band-description {
 .overlayBtn.nextBtn {
 	bottom: 14px;
 	right: 8px;
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg) scale(0.8);
+	-ms-transform: rotate(90deg) scale(0.8);
+	-o-transform: rotate(90deg) scale(0.8);
+	-webkit-transform: rotate(90deg) scale(0.8);
 	transform: rotate(90deg) scale(0.8);
 }
 
