@@ -49,4 +49,4 @@ Greets
 Crymis
 
 
-[here]: http://crymis.github.io/AngularJS-bandGallery-demo/#/
+[here]: http://crymis.github.io/AngularBandGalleryDemo/#/
