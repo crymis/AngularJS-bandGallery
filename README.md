@@ -3,9 +3,9 @@ AngularJS-bandGallery
 
 An AngularJS Directive that sets up a fullscreen gallery with all of your pictures.
 
-#####Demo is available [here]
+##### Demo is available [here]
 
-###Adding to your project
+### Adding to your project
 To get the bandGallery to work, you just have to
 
   1. copy the bandGallery.js file into your directives directory
@@ -13,21 +13,23 @@ To get the bandGallery to work, you just have to
   3. copy the bandGallery.css to your css directory
   4. add the bandGallery.css to your index.html
   5. add the module to your dependencies in app.js like
-    ```
-      angular.module("yourApp", ["crymis-bandGallery"]);
-     ```
+  
+```
+angular.module("yourApp", ["crymis-bandGallery"]);
+```
   6. add the jQuery easing plugin to your project (for smoother animations)
     * http://jqueryui.com/easing/
   7. you are done
   
-###Configuring the directive
+### Configuring the directive
 You can place the directive wherever you want.
 Just add this html tag
-```
+
+```lang=js
 <band-gallery gallery-imgs='myImgs' nav-top-btn="true" nav-down-btn="true" page-nr="true"></band-gallery>
 ```
 
-####Attributes
+#### Attributes
 - gallery-imgs: require an array of objects with
   * key: "url", value: image url
   * optional[key: "title", value: image title which is in front of the image]
@@ -36,7 +38,7 @@ Just add this html tag
 - page-nr: require a boolean value, "true" will show the page number on the bottom, "false" will hide it
   * If you don't add this attributes, the default setting is "true": nav-buttons and page-number are shown
 
-###Thanks
+### Thanks
 
 And that's it! Not too many of configuration for the usage of this neat gallery ;)
 
